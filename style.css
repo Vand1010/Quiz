@@ -242,3 +242,40 @@ button:hover {
     box-shadow: none;
   }
 }
+/* Ajuste para telas pequenas (celulares) */
+@media (max-width: 480px) {
+  /* Deixa o texto da pergunta menor e com espaçamento adequado */
+  #question {
+    font-size: 1.1rem;  /* reduz um pouco o tamanho */
+    padding: 0.8rem 1rem;
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+
+  /* Botões das opções ocupando quase toda a largura */
+  .option-btn {
+    max-width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+
+  /* Container mais compacto */
+  .container {
+    padding: 1rem;
+    width: 95%;
+  }
+
+  /* Botões Próxima e Voltar menores e mais alinhados */
+  button {
+    height: auto;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    min-width: 120px;
+  }
+  
+  /* Ajusta margem entre botões para caber melhor */
+  #nextBtn {
+    margin-right: 5px;
+  }
+}
+
