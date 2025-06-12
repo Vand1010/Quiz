@@ -98,25 +98,15 @@ const quizData = [
     correct: 0
   },
       {
-    question: "Qual nossa musica?",
+    question: "Qual a serie que mais gostamos de olhar juntos?",
     options: [
-      "Seu sorriso",
-      "Alguma do 7minutoz",
-      "Nao temos!"
+      "O mundo sombrio de Sabrina",
+      "Breaking Bad",
+      "Rick and Morty",
+      "A Maldição da Residencia Hill"
     ],
-    correct: 0
+    correct: 1
   },
-      {
-    question: "Qual nossa musica?",
-    options: [
-      "Seu sorriso",
-      "Alguma do 7minutoz",
-      "Nao temos!"
-    ],
-    correct: 0
-  },
-  
-  
   
 ];
 
