@@ -87,7 +87,37 @@ const quizData = [
       "Tudo isso e mais um pouco!"
     ],
     correct: 3
-  }
+  },
+     {
+    question: "Qual nossa musica?",
+    options: [
+      "Seu sorriso",
+      "Alguma do 7minutoz",
+      "Nao temos!"
+    ],
+    correct: 0
+  },
+      {
+    question: "Qual nossa musica?",
+    options: [
+      "Seu sorriso",
+      "Alguma do 7minutoz",
+      "Nao temos!"
+    ],
+    correct: 0
+  },
+      {
+    question: "Qual nossa musica?",
+    options: [
+      "Seu sorriso",
+      "Alguma do 7minutoz",
+      "Nao temos!"
+    ],
+    correct: 0
+  },
+  
+  
+  
 ];
 
 let currentQuestion = 0;
