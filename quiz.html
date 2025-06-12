@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz + Presente Interativo 💞</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container" id="quizContainer">
+    <h2 id="question">Carregando...</h2>
+    <div id="answers"></div>
+
+    <button id="backBtn" class="hidden clickable">Voltar</button>
+    <button id="nextBtn" class="hidden clickable">Próxima</button>
+
+    <!-- Botão "Abrir meu presente" (aparece no final se acertar metade) -->
+    <button id="openCard" class="clickable hidden" style="margin-top: 2rem;">Abrir meu presente 🎁</button>
+
+    <!-- Mensagem do presente -->
+    <div id="cardMessage" class="card hidden">
+      <p>Você arrasou no quiz, meu amor! 💘<br>
+         Que nosso amor continue crescendo em graça e alegria. <br>
+         Feliz Dia dos Namorados! 💑✨
+      </p>
+    </div>
+  </div>
+
+  <!-- Música de fundo -->
+  <audio id="bgMusic" loop>
+    <source src="assets/music.mp3" type="audio/mpeg" />
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <!-- Som do clique -->
+  <audio id="clickSound" src="assets/click.mp3" preload="auto"></audio>
+
+  <!-- Scripts carregados nessa ordem -->
+  <script src="quiz.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dia dos Namorados 💖</title>
+
+  <link rel="stylesheet" href="style.css"/>
+
+  <style>
+    body {
+      font-family: 'Dancing Script', cursive;
+    }
+  </style>
+</head>
+<body>
+
+  <audio id="clickSound" src="assets/click.mp3" preload="auto"></audio>
+
+  <div class="container">
+    <h1>Oi, meu amor ❤️</h1>
+
+    <!-- Primeiro botão (pode estar visível ou escondido dependendo da lógica do script.js) -->
+    <button id="openCardStart" class="clickable" style="margin-top: 3rem;">Abrir meu presente 🎁</button>
+
+    <!-- Mensagem do cartão -->
+    <div class="card hidden" id="cardMessageStart">
+      <p>Desde que Deus uniu nossos caminhos, minha vida se encheu de graça e amor. Feliz Dia dos Namorados, abençoados pelo Senhor! 💘</p>
+      <a href="quiz.html" class="quiz-link clickable" aria-label="Ir para o quiz do amor">Vamos jogar um quiz!</a>
+    </div>
+  </div>
+
+  <script>
+    const clickSound = document.getElementById("clickSound");
+    const openCardBtnStart = document.getElementById("openCardStart");
+    const cardMessageStart = document.getElementById("cardMessageStart");
+
+    function playClickSound() {
+      if (clickSound) {
+        clickSound.pause();
+        clickSound.currentTime = 0;
+        clickSound.play().catch(() => {});
+      }
+    }
+
+    if (openCardBtnStart && cardMessageStart) {
+      openCardBtnStart.addEventListener("click", () => {
+        playClickSound();
+        cardMessageStart.classList.remove("hidden");
+        openCardBtnStart.style.display = "none";
+      });
+    }
+  </script>
+  <!-- Scripts carregados nessa ordem -->
+  <script src="quiz.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
