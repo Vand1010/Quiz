@@ -1,0 +1,149 @@
+/* Fundo com gradiente animado */
+@keyframes bgGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-30deg, #0a0a0a, #0c0c0c, #1d1c1c, #1b1b1b);
+  background-size: 400% 400%;
+  animation: bgGradient 15s ease infinite;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ddd;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  background: #1e1e2f;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #58038d;
+  box-sizing: border-box;
+
+  /* Flex para alinhar tudo centralizado */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Centralizar */
+h1 {
+  text-align: center;
+  color: #eeedee;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #fdfdfd;
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1.5px solid #0a0a0a;
+  background: #2a2a3d;
+  color: #eee;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #0a0a0a;
+  outline: none;
+  background: #0f0e0f;
+  color: #fff;
+}
+
+button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background: #300144;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 14px #ce93d8aa;
+  transition: background-color 0.3s ease;
+  font-family: inherit;
+}
+
+button:hover {
+  background: #9c27b0;
+  box-shadow: 0 6px 18px #ce93d8dd;
+
+}
+
+.message {
+  margin-top: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #f8f3f3;
+  font-size: 20px;
+  
+}
+#problema{
+  font-family: monospace;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+
+/* Responsividade */
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+  }
+  .container {
+    padding: 25px 20px;
+    max-width: 100%;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  input,
+  select,
+  textarea {
+    font-size: 1rem;
+    padding: 10px 12px;
+  }
+  button {
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+}
